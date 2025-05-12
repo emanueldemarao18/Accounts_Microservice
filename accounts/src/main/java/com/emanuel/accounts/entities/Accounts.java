@@ -12,10 +12,11 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "accounts")
-public class Account extends BaseEntity{
+public class Accounts extends BaseEntity{
 
     @Column(name= "account_number")
-    private Long accountId;
+    @Id
+    private Long accountNumber;
 
     @Column(name = "customer_id")
     private Long customerId;
